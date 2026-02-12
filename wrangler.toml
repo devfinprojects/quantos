@@ -1,0 +1,14 @@
+name = "quantos-edge"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+# Configure Static Assets for the Worker
+# This uploads the 'dist' folder and binds it to env.ASSETS
+assets = { directory = "./dist", binding = "ASSETS" }
+
+[vars]
+ENVIRONMENT = "production"
+
+# [env.production]
+# name = "quantos-edge-prod"
+# route = { pattern = "quantos.yourdomain.com/*", zone_name = "yourdomain.com" }
